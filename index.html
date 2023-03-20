@@ -30,7 +30,7 @@
           >
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-item-link" href="">Studio</a>
+              <a class="header-item-link header-studio" href="">Studio</a>
             </li>
             <li class="header-item">
               <a class="header-item-link" href="./portfolio.html">Portfolio</a>
@@ -63,9 +63,20 @@
     <main>
       <!-- hero -->
       <section class="section hero">
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal is hidden">
+            <a class="close-icon-cont" data-modal-close>
+              <svg class="close-icon">
+                <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- about us -->
@@ -635,5 +646,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
